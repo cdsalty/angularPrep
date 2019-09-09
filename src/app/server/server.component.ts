@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent {
-  // serverId: number = 10;
-  // serverStatus: string = "offline";
+  serverId:number = 10;
+  serverStatus:string = "offline";
+      // to get serverId and serverStatus, use data binding in the html file to connnect: {{ serverId}}
 
-  // getServerStatus(){
-  //   return this.serverStatus;
-  // }
+  getServerStatus(){
+    return this.serverStatus;
+  }
 }

@@ -1,11 +1,20 @@
 
-<p>The Server.html component</p>
+<h4>The Server.html component</h4>
+<p>Here is your status:</p>
+  <li>Server ID: {{ serverId }}</li>
+  <!-- <li>Availability: {{ serverStatus }}</li> -->
+<li>Availability: {{ getServerStatus() }}</li>
+  <hr>
+
+
 
 
 <!-- STRING INTERPOLATION -->
 <!-- <p>{{ 'Server' }} with ID{{ serverId }} is {{ getServerStatus() }}</p> -->
     <!-- 'Server' is just an example of how you can hardcode strings within interpolation -->
     <!-- No if/else only ternary operators allowed -->
+    <!-- YOU BUILD YOUR BASIC BUILDING BLOCK... THEN IN THE TYPESCRIPT FILE, IN THE CLASS,
+            - YOU DO YOUR CODE AND DEFINE WHAT WILL DYNAMICALLY BE ADDED -->
 
 <!-- PROPERTY BINDING 
 Creating a button and changing the display upon selecting.-->

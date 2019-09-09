@@ -20,3 +20,6 @@ Instead of using an external template file, you can also you as an in-line templ
 
             
 ** sideNote: Every component will and must have a template property **
+
+
+STRING INTERPOLATION {{}}
