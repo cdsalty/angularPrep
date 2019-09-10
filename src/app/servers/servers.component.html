@@ -1,7 +1,21 @@
 
+<button 
+  class = "btn btn-primary"
+  [disabled] = "!allowNewServer">   <!-- 'only disable the button if false;-->
+  Click to Start Server</button>
+
+  <!-- String Interpalation: Use in your output, bring something to it -->
+  <p>{{ allowNewServer }}</p>
+  <!-- Property Binding: Usually directed to an html element, directive or component -->
+  <p
+    [innerText] = "allowNewServer"
+    class = "colorRed">
+</p>
+
 <app-server></app-server>
 <app-server></app-server>
 
 <!-- 
+ONLY DISABLE IF THIS IS FALSE
 to use, update the AppModule
  -->
