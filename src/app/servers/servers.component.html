@@ -1,16 +1,14 @@
 
 <button 
   class = "btn btn-primary"
-  [disabled] = "!allowNewServer">   <!-- 'only disable the button if false;-->
-  Click to Start Server</button>
-
+  [disabled] = "!allowNewServer"
+  (click) = "onCreateServer() ">Click to Start Server</button>   <!-- disabled meaning 'only disable the button if false;-->
+    
+<p class = "colorGreen">{{ serverStatus }}</p>
   <!-- String Interpalation: Use in your output, bring something to it -->
-  <p>{{ allowNewServer }}</p>
-  <!-- Property Binding: Usually directed to an html element, directive or component -->
-  <p
-    [innerText] = "allowNewServer"
-    class = "colorRed">
-</p>
+  <!-- <p>{{ allowNewServer }}</p> -->
+  <!-- Property Binding: Usual  ly directed to an html element, directive or component -->
+  <!-- <p class = "colorRed" [innerText] = "allowNewServer"></p> -->
 
 <app-server></app-server>
 <app-server></app-server>
