@@ -1,9 +1,23 @@
 
+<!-- <div class="container"> -->
+<label>Server Name</label>
+<!-- EVENT BINDING -->
+<input 
+  type = "text"
+  class = "form-control"
+  (input) = "onUpdateServerName($event)">
+<input 
+  type = "text"
+  class = "form-control"
+  [(ngModel)] = "serverName">
+  
+<p>{{ serverName }}</p>
+
 <button 
-  class = "btn btn-primary"
+  class = "btn btn-primary giveSpace"
   [disabled] = "!allowNewServer"
-  (click) = "onCreateServer() ">Click to Start Server</button>   <!-- disabled meaning 'only disable the button if false;-->
-    
+  (click) = "onCreateServer()">Click to Start Server</button>   <!-- disabled meaning 'only disable the button if false;-->
+  
 <p class = "colorGreen">{{ serverStatus }}</p>
   <!-- String Interpalation: Use in your output, bring something to it -->
   <!-- <p>{{ allowNewServer }}</p> -->
@@ -12,7 +26,7 @@
 
 <app-server></app-server>
 <app-server></app-server>
-
+<!-- </div> -->
 <!-- 
 ONLY DISABLE IF THIS IS FALSE
 to use, update the AppModule
